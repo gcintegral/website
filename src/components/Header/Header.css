@@ -1,0 +1,139 @@
+/* Contenedor Principal */
+.header_container {
+    width: 100%;
+    background-color: var(--primary-900); /* Color azul correcto */
+    padding: 8px 15px;
+    display: flex;
+    justify-content: center;
+    font-family: var(--fuente-cuerpo);
+  }
+  
+  /* Contenedor Interno */
+  .header_content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px; /* Aumentamos altura para que coincida con Figma */
+    z-index: 1000; /* Más alto que el carrusel */
+  }
+  .menu.open {
+    display: flex;
+  }
+
+  /* Logo */
+  .header_logo {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Hace que el logo siempre se ajuste */
+  }
+  
+  .header_logo .logo {
+    max-height: 80%; /* Se ajusta al header sin salir de los bordes */
+    width: auto;
+    transition: max-height 0.3s ease;
+  }
+  
+  /* Botón Menú Hamburguesa */
+  .menu_toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* Menú de Navegación */
+  .menu {
+    display: flex;
+  }
+  
+  .menu_list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu_item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-family: var(--fuente-cuerpo);
+  }
+  
+  .menu_item:hover {
+    color: var(--secondary-200);
+  }
+  
+  /* Responsive (MÓVIL) */
+  @media (max-width: 768px) {
+    .header_container {
+      padding: 6px 12px;
+    }
+  
+    .header_content {
+      height: 60px; /* Ajustamos header en móvil */
+    }
+  
+    .header_logo .logo {
+      max-height: 70%; /* Evita que el logo sea muy grande en móvil */
+    }
+  
+    .menu_toggle {
+      display: block;
+      font-size: 22px;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: var(--primary-900);
+      text-align: center;
+      padding: 8px 0;
+    }
+  
+    .menu.open {
+      display: flex;
+    }
+  
+    .menu_list {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+  
+  /* 🖥️ Responsive (TABLET Y ESCRITORIO) */
+  @media (min-width: 768px) {
+    .header_content {
+      height: 85px; /* Ajustamos grosor del header en tablet */
+    }
+  
+    .header_logo .logo {
+      max-height: 80%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .header_content {
+      height: 90px; /* Header más grueso en desktop, como en Figma */
+    }
+  
+    .header_logo .logo {
+      max-height: 85%;
+    }
+  
+    .menu_item {
+      font-size: 20px;
+    }
+  }
+  
