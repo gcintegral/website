@@ -1,0 +1,294 @@
+/* SECCIÓN PRINCIPAL */
+.contact-container {
+    width: 100%;
+    background-color: var(--white);
+  }
+  
+  /* SECCIÓN DE CONTACTO */
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* TEXTO DE CONTACTO */
+  .contact-text {
+    flex: 1;
+  }
+  
+  .contact-text h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-900);
+    margin-bottom: 1rem;
+  }
+  
+  .contact-text p {
+    font-size: 18px;
+    color: var(--neutral-900);
+    line-height: 1.5;
+  }
+  
+  /* Imagen "Siempre en obra" */
+  .contact-banner {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+  
+  /* FORMULARIO */
+  .contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  /* Ajustar los campos del formulario */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--neutral-400);
+    border-radius: 6px;
+    font-size: 16px;
+    resize: none; /* Deshabilita el redimensionamiento del textarea */
+  }
+  
+  /* Botón del formulario */
+  .contact-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary-700);
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: var(--primary-900);
+  }
+  
+  /* SECCIÓN DEL EQUIPO */
+  .team-section {
+    text-align: center;
+    padding: 4rem 8rem;
+  }
+  
+  .team-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-900);
+    margin-bottom: 2rem;
+  }
+  
+  .team-image {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* PIE DE PÁGINA */
+  .footer-container {
+    background-color: var(--primary-900);
+    color: white;
+    padding: 2rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-contact {
+    flex: 1;
+  }
+  
+  .footer-contact h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .footer-contact p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* ICONOS */
+  .footer-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-icons a {
+    color: white;
+    font-size: 24px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .footer-icons a:hover {
+    opacity: 0.7;
+  }
+  
+  /* 🔹 RESPONSIVE TABLET (768px a 1024px) */
+  @media (max-width: 1024px) {
+    .contact-info {
+      flex-direction: column;
+      padding: 4rem 4rem;
+      text-align: center;
+      gap: 2rem;
+    }
+  
+    .contact-form {
+      max-width: 400px;
+      width: 90%;
+    }
+  
+    .contact-banner {
+      max-width: 250px;
+    }
+  }
+  
+  /* 🔹 RESPONSIVE MÓVIL (menor a 768px) */
+  @media (max-width: 768px) {
+    .contact-info {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+  
+    .contact-form {
+      max-width: 350px;
+      width: 90%;
+    }
+  
+    .contact-banner {
+      max-width: 200px;
+    }
+  
+    .team-section {
+      padding: 3rem 2rem;
+    }
+  
+    .team-section h2 {
+      font-size: 24px;
+    }
+  
+    .footer-container {
+      padding: 2rem;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  /* ========== GOOGLE MAPS ========= */
+.map-section {
+  text-align: center;
+  padding: 2rem 8rem;
+}
+
+.map-section h3 {
+  font-size: 22px;
+  color: var(--primary-900);
+  margin-bottom: 0.5rem;
+}
+
+.map-section p {
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  color: var(--neutral-800);
+}
+
+.map-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== RESPONSIVE: Ocultar imagen del equipo en móvil ========= */
+@media (max-width: 768px) {
+  .team-image {
+    display: none;
+  }
+}
+
+/* RESPONSIVE MAPS */
+@media (max-width: 1024px) {
+  .contact-info {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .contact-banner {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .team-section {
+    padding: 3rem 2rem;
+  }
+
+  .team-section h2 {
+    font-size: 24px;
+  }
+
+  .map-section {
+    padding: 2rem 2rem;
+  }
+
+  .map-section p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 2rem 1rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .map-section {
+    padding: 2rem 1rem;
+  }
+
+  .map-section h3 {
+    font-size: 20px;
+  }
+
+  .map-section p {
+    font-size: 15px;
+    line-height: 1.4;
+    white-space: pre-line;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+
+  /* oculta imagen cuando este en mobi */
+  .team-image {
+    display: none;
+  }
+}
