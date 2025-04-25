@@ -1,0 +1,97 @@
+/* Contenedor Principal */
+.footer_container {
+    width: 100%;
+    background-color: var(--primary-900); /* Azul oscuro */
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif; /* Aplica la fuente correcta */
+  }
+  
+  /* Hace que el footer siempre quede en la parte inferior */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desbordamiento lateral */
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mantiene la altura de la pantalla */
+    width: 100vw;
+  }
+  
+  .main_content {
+    flex: 1; /* Empuja el footer hacia abajo */
+  }
+  
+  /* Contenedor Interno */
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  /* Secciones del Footer */
+  .footer_section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+  }
+  
+  .footer_section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer_section p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Redes Sociales */
+  .social_icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social_icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .social_icons a:hover {
+    color: var(--secondary-200);
+  }
+  
+/* RESPONSIVE: Ajustar footer en móviles */
+@media (max-width: 768px) {
+    .footer_container {
+      padding: 15px; /* Reducimos el padding en móviles */
+    }
+  
+    .footer_content {
+      flex-direction: column;
+      text-align: center;
+      width: 100%; /* Asegura que ocupe todo el ancho */
+    }
+  
+    .footer_section {
+      text-align: center;
+      width: 100%; /* Sección del footer ocupa todo el ancho */
+    }
+  
+    .social_icons {
+      justify-content: center;
+      width: 100%; /* Asegura que las redes sociales estén alineadas */
+    }
+  }
