@@ -1,2 +1,0 @@
-# PaginaArquitectos
-gcArquitectos
