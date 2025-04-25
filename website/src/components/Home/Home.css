@@ -1,0 +1,245 @@
+/* RESETEO GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fuente-cuerpo);
+}
+
+/* CONTENEDOR PRINCIPAL */
+.hero-container {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+
+
+/* HERO SECTION */
+
+
+.hero-image {
+    width: 100vw;
+  height: auto;
+  max-height: 90vh;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* SECCIÓN INTRODUCCIÓN */
+.intro-container {
+  text-align: center;
+  padding: 2rem 1rem; 
+  background-color: var(--white);
+}
+
+/*  TÍTULOS */
+.intro-title {
+  font-size: 42px; 
+  color: var(--primary-900);
+  line-height: 1.2;
+}
+
+
+/* 🔹 PÁRRAFO */
+.intro-text {
+  font-size: 20px;
+  color: var(--neutral-900);
+  margin-top: 2rem ;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  padding: 0 2rem; /* Espaciado interno */
+}
+
+/* 🔹 BOTÓN QUIENES SOMOS */
+.intro-button {
+  margin-top: 2.5rem;
+  padding: 12px 28px; /* tamaño de Botón  */
+  font-size: 20px; /* Textoe */
+  font-weight: 600;
+  color: white;
+  background-color: var(--primary-700); /* Azul exacto */
+  border: none;
+  border-radius: 8px; /* Bordes más redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro-button:hover {
+  background-color: var(--primary-900); /* Azul más oscuro al pasar el mouse */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* 🔹 SECCIÓN PROYECTOS */
+.galeyproject-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 2rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🔹 TARJETA DE PROYECTOS */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* 🔹 IMÁGENES */
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+/* 🔹 TEXTO DEL PROYECTO (Siempre visible) */
+.project-title {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  z-index: 2; /* Siempre encima */
+}
+
+/* 🔹 CAPA OSCURA QUE APARECE AL PASAR EL RATÓN */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* Sin opacidad por defecto */
+  transition: background 0.3s ease;
+  z-index: 1; /* Debajo del texto */
+}
+
+.project-card:hover .project-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Aparece la capa oscura */
+}
+
+.info-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem 2rem;
+  padding: 2rem 2rem;
+}
+
+
+/* BOTÓN INFO */
+.info-button {
+  padding: 12px 28px; /* Ajusta el tamaño del botón */
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: var(--primary-700);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-button:hover {
+  background-color: var(--primary-900);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+
+  
+}
+/* 📌 TABLETS (pantallas menores a 768px) */
+@media (max-width: 768px) {
+  .hero-container {
+    height: 40vh;
+  }
+
+  .hero-image {
+    height: 50vh;
+  }
+
+  .intro-title {
+    font-size: 24px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+  }
+
+  .intro-button {
+    font-size: 18px;
+    padding: 14px 28px;
+  }
+}
+
+/* 📌 MÓVILES (pantallas menores a 480px) */
+@media (max-width: 480px) {
+  .hero-container {
+    height: 40vh;
+  }
+
+  .hero-image {
+    height: 40vh;
+  }
+
+  .intro-title {
+    font-size: 32px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+
+  .intro-button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+/* 📌 MÓVILES (pantallas menores a 370px) */
+@media (max-width: 370px) {
+  .hero-container {
+    height: 45vh;
+  }
+
+  .hero-image {
+    height: 40vh;
+  }
+
+  .intro-title {
+    font-size: 32px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+
+  .intro-button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
