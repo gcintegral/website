@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="footer_section">
           <p>Carrera 16 #9 - 17</p>
           <p>Centro Comercial La Popa</p>
-          <p>Local 13</p>
+          <p>Local 13 - Dosquebradas</p>
         </div>
 
         {/* Sección de redes sociales */}
