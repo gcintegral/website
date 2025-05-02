@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Header from '../Header/Header';
 import "./Proyectos.css";
 import ProyectGallery from "../ProyectGallery/ProyectGallery";
@@ -19,14 +19,14 @@ const Proyectos = () => {
   const { id } = useParams(); 
 
   const [selected, setSelected] = useState("1");
-  const proyectosData = {
+  const proyectosData = useMemo(() => ({
     "1": proyectos_diseno,
     "2": proyectos_diseno_construccion,
     "3": proyectos_construccion,
     "4": proyectos_mantenimiento,
     "5": proyectos_asesoria,
     "6": proyectos_remodelaciones
-  };
+  }), []);
 
   const [proyectos, setProyectos] = useState(proyectosData["1"]);
   const [proyectoSeleccionado, setSelectedProject] = useState(null);
@@ -53,13 +53,13 @@ const Proyectos = () => {
         navigate("/Proyectos");
       }
     }
-  }, [id, navigate]);
+  }, [id, navigate, proyectosData]);
 
   return (
     <div className="proyectos-container">
       <Header />
 
-      {/* Menú de categorías deslizable en móviles */}
+      
       <nav className="menu_proyectos">
         <ul>
           <li className={selected === "1" ? "active" : ""} onClick={() => handleSelect("1")}>

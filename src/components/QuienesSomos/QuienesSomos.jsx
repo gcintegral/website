@@ -92,9 +92,6 @@ const QuienesSomos = () => {
         </ul>
         <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showStatus={false} interval={4000}>
           <div>
-            <img src="https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745421011/5_dqb4w0.png" alt="Equipo 1" />
-          </div>
-          <div>
             <img src="https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745421013/6_hofpwl.png" alt="Equipo 2" />
           </div>
           <div>

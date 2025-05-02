@@ -74,7 +74,7 @@ export const proyectos_diseno_construccion = [
         name: "Bodega Silos Cacao",
         image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420903/Frame_35_kqeu2i.png",
         descripcion: "Diseño y construcción bodega en estructura metálica con\ncolumnas redondas, cerchas y correas tubería rectangular," +
-            +"\nbase muros ladrillo a la vista, lucarna para ventilación y \ncerramiento general en teja arquitectónica. ",
+            " base muros ladrillo a la vista, lucarna para ventilación y \ncerramiento general en teja arquitectónica. ",
         ubicacion: "Villa Nueva",
         ano: "2022",
         cliente: "Luker Agrícola S.A.S.",
@@ -89,7 +89,7 @@ export const proyectos_diseno_construccion = [
         name: "Bodega Importadora Okla",
         image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420906/Frame_36_dfb63g.png",
         descripcion: "Bodega y oficinas para empresa importadora, se aprovecha la \ncircunstancia de contar con dos vías para lograr"
-            + "independizar \nel acceso a las oficinas y el acceso a la bodega, por una vía \ninterna, logrando dos ambientes de trabajo definidos en un \nmismo proyecto. ",
+            + " independizar \nel acceso a las oficinas y el acceso a la bodega, por una vía \ninterna, logrando dos ambientes de trabajo definidos en un \nmismo proyecto. ",
         ubicacion: "",
         ano: "2012",
         cliente: "Importadora Okla",
@@ -102,27 +102,27 @@ export const proyectos_diseno_construccion = [
     {
         id: 16,
         name: "Casa Betulia",
-        image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420905/Proyectos-3_xvp9pu.png",
+        image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1746152939/casabeulia_f0knvm.png",
         descripcion: "Casa campestre sector Betulia, Pereira. Vivienda en dos niveles\naprovechando la topografía, estructura aporticada en\nconcreto." +
             "Cuenta con área social integrada a la cocina, tres\nhabitaciones, tres baños, sistema de energía solar,\naprovechamiento de aguas lluvias para sanitarios y riego.",
         ubicacion: "Sector Betulia, Pereira",
         ano: "2023",
         cliente: "",
         imagenes: [
-            "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420905/Proyectos-3_xvp9pu.png"
+            "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1746152939/casabeulia_f0knvm.png"
         ]
     },
     {
         id: 17,
         name: "Casa Campesina",
-        image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420904/Proyectos-4_eqinxt.png",
+        image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1746152961/casacampesina_gou7uv.png",
         descripcion: "Se recupera parte de sistema prefabricado en sistema liviano y\npaneles de fibrocemento y poliuretano para construir esta\nvivienda en la Costa Atlántica."
             + "Estructura de corredores en\nmadera local, cubierta típica de la región.",
         ubicacion: "Costa Atlántica",
         ano: "2010",
         cliente: "",
         imagenes: [
-            "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420904/Proyectos-4_eqinxt.png"
+            "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1746152961/casacampesina_gou7uv.png"
         ]
     },
     {
@@ -181,7 +181,7 @@ export const proyectos_diseno_construccion = [
         name: "Casa Singer Maracay",
         image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420939/Imagen_c488mv.png",
         descripcion: "Casa moderna de espacios abiertos con características de funcionalidad, decoración e integración familiar." +
-            +" Cuenta con cuatro habitaciones, salón de juegos, área de servicio, cocina independiente, estudio, parqueadero cubierto, sótano con habitación de huéspedes y cava de vino, quiosco y piscina. ",
+                " Cuenta con cuatro habitaciones, salón de juegos, área de servicio, cocina independiente, estudio, parqueadero cubierto, sótano con habitación de huéspedes y cava de vino, quiosco y piscina. ",
         ubicacion: "",
         ano: "",
         cliente: "",
@@ -194,8 +194,8 @@ export const proyectos_diseno_construccion = [
     },
     {
         id: 22,
-        nombre: "Finca Alcazares",
-        imagen: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420944/Frame_60_yzcz7r.png",
+        name: "Finca Alcazares",
+        image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420944/Frame_60_yzcz7r.png",
         descripcion: "Finca Alcazares es un sitio para eventos y hospedaje, sede campestre del Hotel Soratama de Pereira. Se remodela la casa realizando cambios en baños, habitaciones, trasladando la cocina del segundo al primer piso para tener mejor relación con zona de eventos y piscina. Se construye salón para eventos y como complemento de este la cocina campesina con fogón y horno de leña.",
         ubicacion: "Pereira",
         fecha: "Entre 2016 y 2017",
@@ -326,9 +326,9 @@ export const proyectos_mantenimiento = [
         id: 30,
         name: "Impermeabilización cubiertas",
         image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420984/Rectangle_42_fvzyb0.png",
-        descripcion: "Se realizan diferentes tipos de mantenimiento de cubiertas:" +
-            +" \n- Impermeabilizaciones cubierta y/o terrazas, con membrana PVC, manto asfáltico." +
-            +" \n- Mantenimiento de canales con pintuco fill y tela de refuerzo.",
+        descripcion: "Se realizan diferentes tipos de mantenimiento de cubiertas:" 
+            +" \n- Impermeabilizaciones cubierta y/o terrazas, con membrana PVC, manto asfáltico." 
+            +" \n- Mantenimiento de canales con pintuco fill, tela de refuerzo y con impermeabilizantes epoxicos.",
         ubicacion: "",
         ano: "",
         cliente: "",
@@ -458,10 +458,10 @@ export const proyectos_asesoria = [
 export const proyectos_remodelaciones = [
     { 
         id: 39, 
-        name: "PDV Yamaha Pereira", 
+        name: "PDV Yamaha", 
         image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420992/1_scqjbw.png",
-        descripcion: "Lorem ipsum dolor sit amet consectetur. Nulla iaculis eget ac lorem vitae. Nibh nunc eget sagittis sit felis tortor sit sagittis. Eget justo nibh urna egestas. Quam non quis a egestas amet orci elementum faucibus amet.",
-        ubicacion: "",
+        descripcion: "Remodelacion de fachadas en vidrio templado y acero inoxidable,remodelacion de zona de taller,baños y oficinas, pisos industriales epóxicos , redes electricas y redes de voz y datos.",
+        ubicacion: "Pereira, Bucaramanga, Medellín, Bogotá y Montería",
         ano: "",
         cliente: "Incolmotos Yamaha",
         imagenes:[
@@ -540,13 +540,13 @@ export const proyectos_remodelaciones = [
     { 
         id: 45, 
         name: "Remodelación Cocina", 
-        image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420994/7_fraebc.png",
+        image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1746154502/8_sbname.png",
         descripcion: "Cambio de pisos, enchapes de muros, muebles y electrodomésticos.",
         ubicacion: "Pereira",
         ano: "2021",
         cliente: "",
         imagenes:[
-            "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420994/7_fraebc.png"
+            "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1746154502/8_sbname.png"
         ]  
     },
     { 

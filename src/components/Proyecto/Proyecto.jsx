@@ -7,8 +7,8 @@ const Proyecto = ({ proyecto }) => {
 
     return (
         <div>
-           <div className="proyecto_name_container">
-            <h1 className="proyecto_name">{proyecto.name}</h1>
+            <div className="proyecto_name_container">
+                <h1 className="proyecto_name">{proyecto.name}</h1>
             </div>
 
             <div className="detalle_proyecto_container">
@@ -22,8 +22,11 @@ const Proyecto = ({ proyecto }) => {
                 <div className="detalles_proyecto_container">
                     <h2 className="descripcion_proyecto_h2">Descripción</h2>
                     <p className="descripcion_proyecto">{proyecto.descripcion}</p>
-
-                    <h2 className="descripcion_proyecto_h2">Detalles</h2>
+                    {
+                        (proyecto.ubicacion === "" && proyecto.ano === "" && proyecto.cliente === "")
+                            ? <></>
+                            : <h2 className="descripcion_proyecto_h2">Detalles</h2>
+                    }
                     {proyecto.ubicacion?.trim() && (
                         <div className="ubicacion_container">
                             <h3 className="detalle_proyecto_h3">Ubicación</h3>
