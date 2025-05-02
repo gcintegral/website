@@ -44,24 +44,39 @@ const Home = () => {
       <Header />
 
           {/* HERO SECTION - Carrusel */}
-    <div className="hero-carousel">
-      <Carousel
-        showThumbs={false}
-        autoPlay={true}
-        infiniteLoop={true}
-        showStatus={false}
-        interval={4000}
-        transitionTime={1000}
-        showArrows={false}
-        stopOnHover={false}
-      >
-        {project.map((project) => (
-          <div key={project.id} className="slide-container">
-            <img src={project.image} alt={project.name} />
-          </div>
-        ))}
-      </Carousel>
-    </div>
+          <div className="hero-carousel">
+  <Carousel
+    showThumbs={false}
+    autoPlay={true}
+    infiniteLoop={true}
+    showStatus={false}
+    interval={3000}
+    transitionTime={1000}
+    showArrows={true}
+    stopOnHover={false}
+    renderArrowPrev={(onClickHandler, hasPrev, label) =>
+      hasPrev && (
+        <button type="button" className="custom-arrow custom-prev" onClick={onClickHandler} aria-label={label}>
+          ‹
+        </button>
+      )
+    }
+    renderArrowNext={(onClickHandler, hasNext, label) =>
+      hasNext && (
+        <button type="button" className="custom-arrow custom-next" onClick={onClickHandler} aria-label={label}>
+          ›
+        </button>
+      )
+    }
+  >
+    {project.map((project) => (
+      <div key={project.id} className="slide-container">
+        <img src={project.image} alt={project.name} className="hero-image" />
+      </div>
+    ))}
+  </Carousel>
+</div>
+
 
 
       {/* INTRODUCCIÓN */}

@@ -1,4 +1,3 @@
-/* ===================== */
 /*  ESTILOS GENERALES */
 /* ===================== */
 .quienes-somos-page {
@@ -132,6 +131,29 @@
   }
 
   
+
+  .carrusel-quienes-somos .carousel-root {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .carrusel-quienes-somos .carousel .slide img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  /* Responsive solo para quienes somos */
+  @media (max-width: 768px) {
+    .carrusel-quienes-somos .carousel .slide img {
+      height: 300px;
+    }
+  }
+  
+  
   /* RESPONSIVE DESIGN */
 
   
@@ -162,22 +184,5 @@
       width: 85%;
       height: 350px;
     }
-  }
-  
-  /*  WEB (Más de 1024px) */
-  @media (min-width: 1025px) {
-    .quienes-somos-description,
-    .section-description {
-      padding: 0 20%;
-    }
-  
-    .main-image,
-    .carousel img {
-      width: 80%;
-      max-width: 900px;
-      height: 400px;
-    }
-
-    
   }
   

@@ -26,7 +26,7 @@ const Footer = () => {
 
         {/* Sección de redes sociales */}
         <div className="footer_section social_icons">
-        <a href="https://www.instagram.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <a href="https://www.instagram.com/gcintegralgroup/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <FaInstagram />
         </a>
         <a href="https://www.linkedin.com/company/gc-integral-group-s-a-s/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

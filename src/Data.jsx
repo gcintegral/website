@@ -369,7 +369,7 @@ export const proyectos_mantenimiento = [
     },
     {
         id: 33,
-        name: "Recuperación Piso Piscina Pueblo Tapao",
+        name: "Recuperación Piso Piscina",
         image: "https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745420978/m4_iy16yr.png",
         descripcion: "- Reparación fisuras y filtraciones." +
             "\n- Reparación andenes, piso epóxico.\n- Recuperación piscinas con membranas PVC.",

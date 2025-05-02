@@ -57,7 +57,8 @@ const QuienesSomos = () => {
         <p className="section-description2">
           Contamos con oficinas y bodega en el sector La Popa Dosquebradas.
         </p>
-        <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showStatus={false} interval={4000}>
+        <div className="carrusel-quienes-somos">
+        <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showStatus={false} interval={3000} stopOnHover={true}>
           <div>
             <img src="https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745421010/2_tapc7f.png" alt="Instalación 1" />
           </div>
@@ -72,6 +73,7 @@ const QuienesSomos = () => {
           </div>
           
         </Carousel>
+        </div>
       </section>
 
       {/* Sección Equipo y Herramienta */}
@@ -90,7 +92,7 @@ const QuienesSomos = () => {
           <li>Equipos mecánicos para pintura (Epoxi, vinilos, etc.)</li>
           <li>Equipos para preparación de superficies, pulido y brillado de pisos en seco, con bajo nivel de ruido y sin polvo.</li>
         </ul>
-        <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showStatus={false} interval={4000}>
+        <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showStatus={false} interval={3000} stopOnHover={true}>
           <div>
             <img src="https://res.cloudinary.com/dkcdgfm0b/image/upload/v1745421013/6_hofpwl.png" alt="Equipo 2" />
           </div>
